@@ -30,7 +30,7 @@ const mimeTypes = {
 const server = http.createServer((req, res) => {
   console.log(`${req.method} ${req.url}`);
   let filePath = path.join(SRC_DIR, req.url);
-  if (filePath === SRC_DIR || filePath.endsWith('\\')) {
+  if (filePath === SRC_DIR || filePath.endsWith(path.sep)) {
     filePath = path.join(SRC_DIR, 'index.html');
   }
 
