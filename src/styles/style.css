@@ -107,7 +107,7 @@ input {
 }
 
 .justify-between {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .error {

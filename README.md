@@ -33,19 +33,17 @@ yarn install
 
 ### 2. Rodar a Aplicação (Servidor Local)
 
-A aplicação precisa rodar em um servidor local por causa dos módulos ES6.
-
-**Opção 1: Com Node (npx)**
+**Com Node.js (Recomendado):**
 ```bash
-npx http-server
+yarn start
 ```
 
-**Opção 2: Com Live Server (VS Code)**
-- Instale a extensão "Live Server"
-- Clique com botão direito em `src/index.html`
-- Selecione "Open with Live Server"
+Ou em modo desenvolvimento:
+```bash
+yarn dev
+```
 
-Depois acesse `http://localhost:8000` ou a porta indicada no navegador.
+Depois acesse `http://localhost:3000` no navegador.
 
 ### 3. Rodar os Testes
 
@@ -57,6 +55,8 @@ yarn test
 
 | Comando | Descrição |
 |---------|-----------|
+| `yarn start` | Inicia o servidor Node na porta 3000 |
+| `yarn dev` | Alias para yarn start |
 | `yarn test` | Roda os testes em modo watch (observa mudanças) |
 | `yarn test:ui` | Abre interface visual dos testes no navegador |
 | `yarn test:run` | Roda os testes uma única vez |

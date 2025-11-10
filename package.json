@@ -4,6 +4,8 @@
   "description": "Testes para a calculadora Calc.js",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:run": "vitest run"
